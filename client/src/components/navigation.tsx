@@ -6,6 +6,8 @@ export default function Navigation() {
 
   const navItems = [
     { href: "#home", label: "Home" },
+    { href: "#voice-assistant", label: "Voice Assistant" },
+    { href: "#device-control", label: "Smart Devices" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },

@@ -24,23 +24,29 @@ export default function Hero() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Hi, I'm <span className="text-accent">Sachin Kumar</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-4 opacity-90">Aspiring Software Developer</p>
+            <p className="text-xl md:text-2xl mb-4 opacity-90">Advanced Voice Assistant Developer</p>
             <p className="text-lg mb-8 opacity-80 max-w-xl">
-              Computer Science student passionate about building innovative solutions with modern web technologies and machine learning.
+              Computer Science student creating intelligent voice-controlled systems for smart homes. 
+              Control all your devices naturally with voice commands powered by AI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={handleViewProjects}
+                onClick={() => {
+                  const element = document.querySelector("#voice-assistant");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
                 className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-lg font-semibold"
               >
-                View Projects
+                Try Voice Assistant
               </Button>
               <Button
-                onClick={handleGetInTouch}
+                onClick={handleViewProjects}
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3 text-lg font-semibold"
               >
-                Get In Touch
+                View Projects
               </Button>
             </div>
           </div>

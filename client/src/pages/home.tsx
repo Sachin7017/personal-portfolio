@@ -1,5 +1,7 @@
 import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
+import VoiceAssistant from "@/components/voice-assistant";
+import DeviceControl from "@/components/device-control";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
@@ -12,6 +14,8 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
+      <VoiceAssistant />
+      <DeviceControl />
       <About />
       <Skills />
       <Projects />
