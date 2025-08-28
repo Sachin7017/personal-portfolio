@@ -10,6 +10,9 @@ export interface IStorage {
 }
 
 export class MemStorage implements IStorage {
+  createContact(contactData: { message: string; name: string; email: string; subject: string; }) {
+    throw new Error("Method not implemented.");
+  }
   private users: Map<number, User>;
   currentId: number;
 
