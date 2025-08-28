@@ -1,3 +1,4 @@
+const API_URL = import.meta.env.VITE_API_URL;
 import { useState } from "react";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram, Send, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,7 +19,8 @@ export default function Contact() {
   const { toast } = useToast();
 
   const contactMutation = useMutation({
-    mutationFn: (data: typeof formData) => apiRequest("POST", "/api/contact", data),
+    mutationFn: (data: typeof formData) =>
+  apiRequest("POST", `${API_URL}/api/contact`, data),
     onSuccess: () => {
       toast({
         title: "Success",
