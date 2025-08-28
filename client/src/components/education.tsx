@@ -9,7 +9,7 @@ export default function Education() {
       title: "B.Tech in Computer Science",
       institution: "Dr. A P J Abdul Kalam Technical University, Lucknow",
       year: "2025 (Pursuing)",
-      status: "Current",
+      status: "Pursuing",
       statusColor: "bg-blue-100 text-blue-700",
     },
     {
@@ -98,7 +98,7 @@ export default function Education() {
                   <div className="flex-1">
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Apprenticeship</h4>
                     <p className="text-gray-600 mb-2">SMPS Innovation Electronics (P) Ltd.</p>
-                    <p className="text-sm text-gray-500 mb-3">Oct 1, 2021 - Nov 15, 2021 (45 Days)</p>
+                    <p className="text-sm text-gray-500 mb-3">Aug 1, 2021 - Nov 15, 2021 (3 months)</p>
                     <p className="text-gray-600">
                       Gained hands-on experience in electronics and technical problem-solving, 
                       working on innovative projects and learning industry best practices.

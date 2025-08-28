@@ -86,16 +86,17 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Location",
-      value: "Delhi, India",
+      value: "Noida, Uttar Pradesh, India",
     },
   ];
 
-  const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    const socialLinks = [
+    { icon: Github, href: "https://github.com/Sachin7017", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/sachin-kumar-517346255", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/sachin_kum01?igsh=MXdwZ2NnbWZlamh1Zg==", label: "Instagram" },
+    { icon: Twitter, href: "#", label: "Twitter" }, // agar abhi Twitter nahi hai to ye line hata bhi sakta hai
   ];
+
 
   return (
     <section id="contact" className="py-20 bg-white">
