@@ -14,8 +14,8 @@ export default function Education() {
     },
     {
       type: "education",
-      icon: Tag,
-      title: "Intermediate",
+      icon: GraduationCap,
+      title: "Diploma in Computer Science",
       institution: "Board of Technical Education, Lucknow",
       year: "2022",
       status: "70%",
