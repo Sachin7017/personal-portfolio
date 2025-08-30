@@ -12,6 +12,8 @@ export default function Projects() {
       technologies: ["Python", "OpenCV", "CNN", "Deep Learning"],
       techColors: ["bg-blue-100 text-blue-700", "bg-green-100 text-green-700", "bg-purple-100 text-purple-700", "bg-orange-100 text-orange-700"],
       year: "2024",
+      githubLink: "https://github.com/Sachin7017/Facial-expression-recognization",
+    externalLink: "https://your-site.com/facial-expression-recognition"
     },
     {
       title: "E-Voting System",
@@ -68,12 +70,17 @@ export default function Projects() {
                       {project.year}
                     </div>
                     <div className="flex space-x-2">
-                      <Button size="sm" variant="ghost" className="text-primary hover:text-secondary">
-                        <Github className="w-5 h-5" />
-                      </Button>
-                      <Button size="sm" variant="ghost" className="text-primary hover:text-secondary">
-                        <ExternalLink className="w-5 h-5" />
-                      </Button>
+                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+  <Button size="sm" variant="ghost" className="text-primary hover:text-secondary">
+    <Github className="w-5 h-5" />
+  </Button>
+</a>
+<a href={project.externalLink} target="_blank" rel="noopener noreferrer">
+  <Button size="sm" variant="ghost" className="text-primary hover:text-secondary">
+    <ExternalLink className="w-5 h-5" />
+  </Button>
+</a>
+
                     </div>
                   </div>
                 </div>
