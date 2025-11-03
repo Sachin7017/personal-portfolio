@@ -88,7 +88,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Location",
-      value: "Noida, Uttar Pradesh, India",
+      value: "West Patel Nagar, Delhi, India",
     },
   ];
 
