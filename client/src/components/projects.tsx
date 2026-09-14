@@ -37,7 +37,7 @@ export default function Projects() {
       year: "2026",
       githubLink: "https://github.com/Sachin7017/interactive-sales-dashboard",
       externalLink:
-        "https://sachin7017.github.io/interactive-sales-dashboard/",
+        "https://interactive-sales-dashboard-wine.vercel.app/",
     },
     {
       title: "Facial Expression Recognition",
