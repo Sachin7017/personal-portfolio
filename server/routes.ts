@@ -24,20 +24,31 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Download resume endpoint
   app.get("/api/resume/download", (req, res) => {
-    const resumePath = path.join(process.cwd(), "attached_assets", "Sachin_Kumar_Resume.pdf");
-    
-    if (fs.existsSync(resumePath)) {
-      res.download(resumePath, "Sachin_Kumar_Resume.pdf", (err) => {
-        if (err) {
-          console.error("Error downloading resume:", err);
-          res.status(500).json({ success: false, message: "Failed to download resume" });
-        }
-      });
-    } else {
-      res.status(404).json({ success: false, message: "Resume not found" });
-    }
-  });
+  const resumePath = path.join(
+    process.cwd(),
+    "attached_assets",
+    "Sachin.pdf"
+  );
 
+  if (fs.existsSync(resumePath)) {
+    res.download(resumePath, "Sachin.pdf", (err) => {
+      if (err) {
+        console.error("Error downloading resume:", err);
+        if (!res.headersSent) {
+          res.status(500).json({
+            success: false,
+            message: "Failed to download resume",
+          });
+        }
+      }
+    });
+  } else {
+    res.status(404).json({
+      success: false,
+      message: "Resume not found",
+    });
+  }
+});
   const httpServer = createServer(app);
   return httpServer;
 }

@@ -45,7 +45,7 @@ export default function Contact() {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "Sachin_Kumar_Resume.pdf";
+        a.download = "Sachin.pdf";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
