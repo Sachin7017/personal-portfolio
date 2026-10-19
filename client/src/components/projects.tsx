@@ -29,7 +29,7 @@ export default function Projects() {
       year: "2026",
       githubLink: "https://github.com/Sachin7017/ai-customer-support-agent-n8n",
       externalLink:
-        "https://github.com/Sachin7017/ai-customer-support-agent-n8n",
+      
     },
     {
       title: "Interactive Sales Dashboard",
