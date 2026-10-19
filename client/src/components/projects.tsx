@@ -98,6 +98,7 @@ export default function Projects() {
         "bg-green-100 text-green-700",
       ],
       year: "2024",
+      githubLink:"https://github.com/Sachin7017/library-management-system"
     },
   ];
 
