@@ -27,9 +27,7 @@ export default function Projects() {
         "bg-orange-100 text-orange-700",
       ],
       year: "2026",
-      githubLink: "https://github.com/Sachin7017/ai-customer-support-agent-n8n",
-      externalLink:
-      
+      githubLink: "https://github.com/Sachin7017/ai-customer-support-agent-n8n", 
     },
     {
       title: "Interactive Sales Dashboard",
@@ -163,19 +161,21 @@ export default function Projects() {
                           <Github className="w-5 h-5" />
                         </Button>
                       </a>
-                      <a
-                        href={project.externalLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          className="text-primary hover:text-secondary"
-                        >
-                          <ExternalLink className="w-5 h-5" />
-                        </Button>
-                      </a>
+                      {project.externalLink && (
+  <a
+    href={project.externalLink}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button
+      size="sm"
+      variant="ghost"
+      className="text-primary hover:text-secondary"
+    >
+      <ExternalLink className="w-5 h-5" />
+    </Button>
+  </a>
+)}
                     </div>
                   </div>
                 </div>
